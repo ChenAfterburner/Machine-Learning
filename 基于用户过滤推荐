@@ -1,0 +1,13 @@
+1、问题描述
+电影            张三  李四  王五  我
+《新白娘子传奇》  1    4     3    5
+《笑傲江湖》     1     0     4    5
+《龙门飞甲》     0     2     1    0
+《泰坦尼克号》   1     1     4    5
+《流浪地球》     1     1     4    值得看吗
+2、解决方案
+import pandas as pd
+from math import sqrt
+
+def load_data(file):
+    data = pd.read_csv(file)
